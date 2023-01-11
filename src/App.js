@@ -1,11 +1,15 @@
 /* eslint-disable react/jsx-pascal-case */
 import './App.css';
-import Add_remove from './firebaseTriturial/Add_remove'
+import Add from './firebaseTriturial/Add';
+import Delete from './firebaseTriturial/Delete';
+import Getdata from './firebaseTriturial/Getdata'
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Add_remove/>
+        <Getdata/>
+        {/* <Add /> */}
+        <Delete />
       </header>
     </div>
   );

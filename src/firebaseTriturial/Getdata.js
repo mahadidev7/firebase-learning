@@ -4,11 +4,14 @@ import {
     getFirestore, collection, getDocs
 } from 'firebase/firestore'
 
-function Add_remove() {
+function Getdata() {
 
+    // need is start
     const db = getFirestore();
     const colRef = collection(db, 'schoolsStudent') // collection(database, database name)
+    // need is end
 
+// =========== get data start ============
     // get coloection data 
     getDocs(colRef)
     .then((snapshort) => {
@@ -22,10 +25,12 @@ function Add_remove() {
     .catch( err => {
         console.log(err.message);
     })
+// =========== get data end ============
+
 
   return (
-    <div>add_remove</div>
+    <div>Getdata</div>
   )
 }
 
-export default Add_remove
+export default Getdata
