@@ -1,15 +1,17 @@
 /* eslint-disable react/jsx-pascal-case */
 import './App.css';
-import Add from './firebaseTriturial/Add';
-import Delete from './firebaseTriturial/Delete';
-import Getdata from './firebaseTriturial/Getdata'
+import Add from './components/Add';
+import Delete from './components/Delete';
+import Getdata from './components/Getdata'
+import RealTimeData from './components/RealTimeData';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Getdata/>
-        {/* <Add /> */}
-        <Delete />
+        {/* <Getdata/> */}
+        <Add />
+        {/* <Delete /> */}
+        <RealTimeData />
       </header>
     </div>
   );
