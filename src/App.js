@@ -3,6 +3,7 @@ import './App.css';
 import Add from './components/Add';
 import Delete from './components/Delete';
 import Getdata from './components/Getdata'
+import Ordering from './components/Ordering';
 import Queries from './components/Queries';
 import RealTimeData from './components/RealTimeData';
 function App() {
@@ -10,10 +11,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <Getdata/> */}
-        {/* <Add /> */}
+        <Add />
         {/* <Delete /> */}
         {/* <RealTimeData /> */}
-        <Queries />
+        {/* <Queries /> */}
+        <Ordering />
       </header>
     </div>
   );
